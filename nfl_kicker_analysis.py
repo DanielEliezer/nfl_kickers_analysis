@@ -88,10 +88,6 @@ def get_kicker_name(st):
 
 ## ps: I had to make some changes in this file, so that I could upload on github
 plays = pd.read_csv('plays.csv')
-plays = plays[['playId','gameId','possessionTeamId','nonpossessionTeamId','playType',
-               'quarter','gameClock','playStats', 'distanceToGoalPre','netYards', 'offensiveYards',
-               'visitingScorePost','visitingScorePre','homeScorePost','homeScorePre']]
-plays = plays[plays['playType'].isin(['field goal','xp'])]
 plays.head()
 
 
@@ -99,14 +95,17 @@ plays.head()
 
 
 games = pd.read_csv('games.csv')
-games = games[games['seasonType'] == 'REG']
-games = games[['season', 'gameId', 'gameDate','homeTeamId','visitorTeamId']]
 games.head()
 
 
 # In[4]:
-
-
+# Filtering the raw datasets, and selecting only the most important columns
+plays = plays[['playId','gameId','possessionTeamId','nonpossessionTeamId','playType',
+               'quarter','gameClock','playStats', 'distanceToGoalPre','netYards', 'offensiveYards',
+               'visitingScorePost','visitingScorePre','homeScorePost','homeScorePre']]
+plays = plays[plays['playType'].isin(['field goal','xp'])]
+games = games[games['seasonType'] == 'REG']
+games = games[['season', 'gameId', 'gameDate','homeTeamId','visitorTeamId']]
 # filtering and joining the data
 df = plays.merge(games[['season', 'gameId', 'gameDate','homeTeamId','visitorTeamId']], on = 'gameId', how = 'inner')
 
