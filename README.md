@@ -4,7 +4,7 @@
 
 - The data was collected from this kaggle dataset: https://www.kaggle.com/toddsteussie/nfl-play-statistics-dataset-2004-to-present. The data is from 2006 to 2019.
 
-Files in the repository:
+-Files in the repository:
 
 • plays.csv: A full play-by-play report, with the information about the play, such as the attacking team, the defending team, the score before and after, the distance to the goal post, the moment on the game, the outcome of the play, etc. 
 
@@ -13,10 +13,10 @@ Files in the repository:
 <br>• nfl_kicker_analysis.ipynb: The notebook of the project
 <br>• nfl_kicker_analysis.py: The project in python
 
-Libraries used:
+- Libraries used:
 Pandas, Numpy, Seaborn, Matplotlib, Scipy, dateutil, datetime
 
-Description and Motivation
+- Description and Motivation
 
 The kickers job is a hard one. In this project, the goal is to do an EDA to better understand the performance of NFL kickers. 
 
