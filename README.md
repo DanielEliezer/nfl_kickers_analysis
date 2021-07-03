@@ -12,8 +12,7 @@ Files in the repository:
 
 • players.csv: A report with the information about the players: such as the first name, last name, nationality, date of birth, age of draft, college, etc.
 
-• nfl_kicker_analysis.ipynb: The notebook of the project
-
+• nfl_kicker_analysis.ipynb: The notebook of the project <br>
 • nfl_kicker_analysis.py: The project in python
 
 Libraries used:
