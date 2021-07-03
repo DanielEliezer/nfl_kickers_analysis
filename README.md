@@ -4,7 +4,7 @@
 
 - The data was collected from this kaggle dataset: https://www.kaggle.com/toddsteussie/nfl-play-statistics-dataset-2004-to-present. The data is from 2006 to 2019.
 
--Files in the repository:
+- Files in the repository:
 
 • plays.csv: A full play-by-play report, with the information about the play, such as the attacking team, the defending team, the score before and after, the distance to the goal post, the moment on the game, the outcome of the play, etc. 
 
