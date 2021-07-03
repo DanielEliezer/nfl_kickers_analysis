@@ -8,7 +8,7 @@
 # 
 # Welcome to the NFL kicker’s performance analysis! We’ll take a dive on the data from kickers from 2006 and 2019. Are they getting better over the years? Do they feel the pressure of playing away from home? How do their accuracy change in pivotal moments? We'll try to get some of these answers.
 # 
-# The data was obtained in <a href="https://www.kaggle.com/maxhorowitz/nflplaybyplay2009to2016"> this kaggle dataset. </a>
+# The data was obtained in <a href="https://www.kaggle.com/toddsteussie/nfl-play-statistics-dataset-2004-to-present"> this kaggle dataset. </a>
 # It contains a full play-by-play report of all games in the NFL. It’s a very big folder with a lot of csv files that can generate a lot of interesting analysis for the football fans. 
 # 
 # #### In this project, we’ll try to answer the followings:
@@ -86,7 +86,7 @@ def get_kicker_name(st):
 # In[2]:
 
 
-## ps: I had to make some changes in this file, so that I could upload on github
+## ps: I had to make some changes in this file, so that I could upload on github. The original dataset i
 plays = pd.read_csv('plays.csv')
 plays.head()
 
@@ -99,13 +99,17 @@ games.head()
 
 
 # In[4]:
-# Filtering the raw datasets, and selecting only the most important columns
+
+
+## Filtering the raw datasets, and selecting only the most important columns  
 plays = plays[['playId','gameId','possessionTeamId','nonpossessionTeamId','playType',
                'quarter','gameClock','playStats', 'distanceToGoalPre','netYards', 'offensiveYards',
                'visitingScorePost','visitingScorePre','homeScorePost','homeScorePre']]
 plays = plays[plays['playType'].isin(['field goal','xp'])]
+
 games = games[games['seasonType'] == 'REG']
 games = games[['season', 'gameId', 'gameDate','homeTeamId','visitorTeamId']]
+
 # filtering and joining the data
 df = plays.merge(games[['season', 'gameId', 'gameDate','homeTeamId','visitorTeamId']], on = 'gameId', how = 'inner')
 
