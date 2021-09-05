@@ -18,7 +18,7 @@ Pandas, Numpy, Seaborn, Matplotlib, Scipy, dateutil, datetime
 
 - Description and Motivation
 
-The kickers job is a hard one. In this project, the goal is to do an EDA to better understand the performance of NFL kickers. 
+The kickers job is a hard one. If they score, they didn't do more than their obligation. If they miss, they can be held responsible alone for the loss. In this project, the goal is to do an EDA to better understand what drives the performance of NFL kickers. 
 
 We'll try to answer some of the followings: 
 
