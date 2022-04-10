@@ -38,6 +38,6 @@ We'll try to answer some of the followings:
 <br>• nfl_kicker_analysis.py: The project in python
 
 - Libraries used:
-Pandas, Numpy, Seaborn, Matplotlib, Scipy, dateutil, datetime
+Pandas, Numpy, Seaborn, Matplotlib, Scipy, dateutil, datetime, mlxtend
 
 Thanks for reading!
