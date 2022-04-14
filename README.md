@@ -1,6 +1,6 @@
 # nfl_kickers_analysis
 
-- Check out the medium post about this project: https://medium.com/@danieleliezer/nfl-kicker-analysis-a57e023088c1
+- Check out the medium post about this project:https://danieleliezer.medium.com/nfl-kicker-analysis-3b3ff88fb90d
 
 - The data was collected from this kaggle dataset: https://www.kaggle.com/toddsteussie/nfl-play-statistics-dataset-2004-to-present. The data is from 2006
 
