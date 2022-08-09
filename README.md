@@ -4,7 +4,7 @@
 
 - The data was collected from this kaggle dataset: https://www.kaggle.com/toddsteussie/nfl-play-statistics-dataset-2004-to-present. The data is from 2006
 
-- Description and Motivation
+### Description and Motivation
 
 The kickers job is a hard one. If they score, they didn't do more than their obligation. If they miss, they can be held responsible alone for the loss. In this project, the goal is to do an EDA to better understand what drives the performance of NFL kickers. 
 
@@ -16,7 +16,7 @@ We'll try to answer some of the followings:
 • Do the kickers feel the pressure? How do their accuracy change when playing home vs away? And in division games? And in pivotal moments? <br>
 • At what ages do the kickers hit their prime? 
 
-- Main Results
+### Main Results
 
 • The Patriots, the Ravens and the Steelers were great kicking the ball in the period. The Browns, Buccaneers and the Washington Football Team were the worst. <br>
 • Justin Tucker stand out a lot! <br>
@@ -28,7 +28,7 @@ We'll try to answer some of the followings:
 • We can't be sure about the age that the kickers are in their prime. We would need a longer period to make this study properly.
  to 2020.
 
-- Files in the repository:
+### Files in the repository:
 
 • plays.csv: A full play-by-play report, with the information about the play, such as the attacking team, the defending team, the score before and after, the distance to the goal post, the moment on the game, the outcome of the play, etc. 
 
@@ -37,7 +37,7 @@ We'll try to answer some of the followings:
 <br>• nfl_kicker_analysis.ipynb: The notebook of the project
 <br>• nfl_kicker_analysis.py: The project in python
 
-- Libraries used:
+### Libraries used:
 Pandas, Numpy, Seaborn, Matplotlib, Scipy, dateutil, datetime, mlxtend
 
 Thanks for reading!
